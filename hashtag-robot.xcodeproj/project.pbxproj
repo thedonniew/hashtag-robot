@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8C0EC6E1A11761B0028DF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0EC6D1A11761B0028DF65 /* AppDelegate.swift */; };
+		F8C0EC701A11761B0028DF65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0EC6F1A11761B0028DF65 /* ViewController.swift */; };
+		F8C0EC731A11761B0028DF65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C0EC711A11761B0028DF65 /* Main.storyboard */; };
+		F8C0EC751A11761B0028DF65 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C0EC741A11761B0028DF65 /* Images.xcassets */; };
+		F8C0EC781A11761B0028DF65 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C0EC761A11761B0028DF65 /* LaunchScreen.xib */; };
+		F8C0EC841A11761B0028DF65 /* hashtag_robotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0EC831A11761B0028DF65 /* hashtag_robotTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8C0EC7E1A11761B0028DF65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8C0EC601A11761B0028DF65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C0EC671A11761B0028DF65;
+			remoteInfo = "hashtag-robot";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F8C0EC681A11761B0028DF65 /* hashtag-robot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hashtag-robot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C0EC6C1A11761B0028DF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C0EC6D1A11761B0028DF65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8C0EC6F1A11761B0028DF65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8C0EC721A11761B0028DF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8C0EC741A11761B0028DF65 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F8C0EC771A11761B0028DF65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F8C0EC7D1A11761B0028DF65 /* hashtag-robotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hashtag-robotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C0EC821A11761B0028DF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C0EC831A11761B0028DF65 /* hashtag_robotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hashtag_robotTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8C0EC651A11761B0028DF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C0EC7A1A11761B0028DF65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8C0EC5F1A11761B0028DF65 = {
+			isa = PBXGroup;
+			children = (
+				F8C0EC6A1A11761B0028DF65 /* hashtag-robot */,
+				F8C0EC801A11761B0028DF65 /* hashtag-robotTests */,
+				F8C0EC691A11761B0028DF65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8C0EC691A11761B0028DF65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8C0EC681A11761B0028DF65 /* hashtag-robot.app */,
+				F8C0EC7D1A11761B0028DF65 /* hashtag-robotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C0EC6A1A11761B0028DF65 /* hashtag-robot */ = {
+			isa = PBXGroup;
+			children = (
+				F8C0EC6D1A11761B0028DF65 /* AppDelegate.swift */,
+				F8C0EC6F1A11761B0028DF65 /* ViewController.swift */,
+				F8C0EC711A11761B0028DF65 /* Main.storyboard */,
+				F8C0EC741A11761B0028DF65 /* Images.xcassets */,
+				F8C0EC761A11761B0028DF65 /* LaunchScreen.xib */,
+				F8C0EC6B1A11761B0028DF65 /* Supporting Files */,
+			);
+			path = "hashtag-robot";
+			sourceTree = "<group>";
+		};
+		F8C0EC6B1A11761B0028DF65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8C0EC6C1A11761B0028DF65 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F8C0EC801A11761B0028DF65 /* hashtag-robotTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8C0EC831A11761B0028DF65 /* hashtag_robotTests.swift */,
+				F8C0EC811A11761B0028DF65 /* Supporting Files */,
+			);
+			path = "hashtag-robotTests";
+			sourceTree = "<group>";
+		};
+		F8C0EC811A11761B0028DF65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8C0EC821A11761B0028DF65 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8C0EC671A11761B0028DF65 /* hashtag-robot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C0EC871A11761B0028DF65 /* Build configuration list for PBXNativeTarget "hashtag-robot" */;
+			buildPhases = (
+				F8C0EC641A11761B0028DF65 /* Sources */,
+				F8C0EC651A11761B0028DF65 /* Frameworks */,
+				F8C0EC661A11761B0028DF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hashtag-robot";
+			productName = "hashtag-robot";
+			productReference = F8C0EC681A11761B0028DF65 /* hashtag-robot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8C0EC7C1A11761B0028DF65 /* hashtag-robotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C0EC8A1A11761B0028DF65 /* Build configuration list for PBXNativeTarget "hashtag-robotTests" */;
+			buildPhases = (
+				F8C0EC791A11761B0028DF65 /* Sources */,
+				F8C0EC7A1A11761B0028DF65 /* Frameworks */,
+				F8C0EC7B1A11761B0028DF65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8C0EC7F1A11761B0028DF65 /* PBXTargetDependency */,
+			);
+			name = "hashtag-robotTests";
+			productName = "hashtag-robotTests";
+			productReference = F8C0EC7D1A11761B0028DF65 /* hashtag-robotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8C0EC601A11761B0028DF65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Donnie Wang";
+				TargetAttributes = {
+					F8C0EC671A11761B0028DF65 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F8C0EC7C1A11761B0028DF65 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F8C0EC671A11761B0028DF65;
+					};
+				};
+			};
+			buildConfigurationList = F8C0EC631A11761B0028DF65 /* Build configuration list for PBXProject "hashtag-robot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8C0EC5F1A11761B0028DF65;
+			productRefGroup = F8C0EC691A11761B0028DF65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8C0EC671A11761B0028DF65 /* hashtag-robot */,
+				F8C0EC7C1A11761B0028DF65 /* hashtag-robotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8C0EC661A11761B0028DF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C0EC731A11761B0028DF65 /* Main.storyboard in Resources */,
+				F8C0EC781A11761B0028DF65 /* LaunchScreen.xib in Resources */,
+				F8C0EC751A11761B0028DF65 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C0EC7B1A11761B0028DF65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8C0EC641A11761B0028DF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C0EC701A11761B0028DF65 /* ViewController.swift in Sources */,
+				F8C0EC6E1A11761B0028DF65 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C0EC791A11761B0028DF65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C0EC841A11761B0028DF65 /* hashtag_robotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8C0EC7F1A11761B0028DF65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8C0EC671A11761B0028DF65 /* hashtag-robot */;
+			targetProxy = F8C0EC7E1A11761B0028DF65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8C0EC711A11761B0028DF65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C0EC721A11761B0028DF65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8C0EC761A11761B0028DF65 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C0EC771A11761B0028DF65 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8C0EC851A11761B0028DF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8C0EC861A11761B0028DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8C0EC881A11761B0028DF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "hashtag-robot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F8C0EC891A11761B0028DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "hashtag-robot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F8C0EC8B1A11761B0028DF65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hashtag-robotTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hashtag-robot.app/hashtag-robot";
+			};
+			name = Debug;
+		};
+		F8C0EC8C1A11761B0028DF65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "hashtag-robotTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hashtag-robot.app/hashtag-robot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8C0EC631A11761B0028DF65 /* Build configuration list for PBXProject "hashtag-robot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C0EC851A11761B0028DF65 /* Debug */,
+				F8C0EC861A11761B0028DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C0EC871A11761B0028DF65 /* Build configuration list for PBXNativeTarget "hashtag-robot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C0EC881A11761B0028DF65 /* Debug */,
+				F8C0EC891A11761B0028DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F8C0EC8A1A11761B0028DF65 /* Build configuration list for PBXNativeTarget "hashtag-robotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C0EC8B1A11761B0028DF65 /* Debug */,
+				F8C0EC8C1A11761B0028DF65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8C0EC601A11761B0028DF65 /* Project object */;
+}
