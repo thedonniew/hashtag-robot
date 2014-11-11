@@ -13,7 +13,7 @@
 		<key>5FB8AF1129D292DFCC4095CBF873894039C104B4</key>
 		<string>https://github.com/redhurley/hashtag-robot.git</string>
 		<key>72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD</key>
-		<string>github.com:mattdonnelly/Swifter.git</string>
+		<string>https://github.com/mattdonnelly/Swifter.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>hashtag-robot.xcodeproj</string>
