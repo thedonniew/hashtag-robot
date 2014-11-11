@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>21C224F8-A8AB-4F4A-BBB1-CE39B66DD9D0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>hashtag-robot</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5FB8AF1129D292DFCC4095CBF873894039C104B4</key>
+		<string>https://github.com/redhurley/hashtag-robot.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hashtag-robot.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5FB8AF1129D292DFCC4095CBF873894039C104B4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/redhurley/hashtag-robot.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5FB8AF1129D292DFCC4095CBF873894039C104B4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5FB8AF1129D292DFCC4095CBF873894039C104B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hashtag-robot</string>
+		</dict>
+	</array>
+</dict>
+</plist>
