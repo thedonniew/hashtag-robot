@@ -15,7 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // try our new hashtag recommender! :)
+        // single-word searches are best, not complicated messages
+        // look at the console for output
+        HashtagRecommender.getHashtags("kale",
+            success:{
+                (hashtags) in
+                println("----------")
+                println("Recommended hashtags: \(hashtags)")
+            },
+            failure: {
+                (error) in
+                println("failed to retrieve hashtags")
+            }
+        )
         return true
     }
 
