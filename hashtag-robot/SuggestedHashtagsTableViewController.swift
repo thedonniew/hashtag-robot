@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol SuggestedHashtagsTableViewControllerDelegate {
+    
+    func suggestedHashtagsTableViewController(controller:SuggestedHashtagsTableViewController, didSelectHashtag hashtag:String)
+}
+
 class SuggestedHashtagsTableViewController: UITableViewController {
     
 
     
     let suggestedHashtags = ["#breakfast", "#healthy", "#kale", "#oatmeal"]
+    var delegate: SuggestedHashtagsTableViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +41,7 @@ class SuggestedHashtagsTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Potentially incomplete method implementation.
         // Return the number of sections.
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,15 +50,21 @@ class SuggestedHashtagsTableViewController: UITableViewController {
         return suggestedHashtags.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("HashtagCell", forIndexPath: indexPath) as HashtagCell
 
         // Configure the cell...
+        cell.hashtagNameLabel?.text = suggestedHashtags[indexPath.row]
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let hashtag = suggestedHashtags[indexPath.row]
+        delegate?.suggestedHashtagsTableViewController(self, didSelectHashtag: hashtag)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

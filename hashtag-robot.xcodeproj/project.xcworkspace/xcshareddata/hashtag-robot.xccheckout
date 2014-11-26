@@ -12,8 +12,6 @@
 	<dict>
 		<key>5FB8AF1129D292DFCC4095CBF873894039C104B4</key>
 		<string>https://github.com/redhurley/hashtag-robot.git</string>
-		<key>72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD</key>
-		<string>https://github.com/mattdonnelly/Swifter.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>hashtag-robot.xcodeproj</string>
@@ -21,8 +19,6 @@
 	<dict>
 		<key>5FB8AF1129D292DFCC4095CBF873894039C104B4</key>
 		<string>../..</string>
-		<key>72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD</key>
-		<string>../../../Swifter</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/redhurley/hashtag-robot.git</string>
@@ -39,14 +35,6 @@
 			<string>5FB8AF1129D292DFCC4095CBF873894039C104B4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>hashtag-robot</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Swifter</string>
 		</dict>
 	</array>
 </dict>
