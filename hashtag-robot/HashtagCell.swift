@@ -22,6 +22,12 @@ class HashtagCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        if selected {
+            hashtagNameLabel?.font = UIFont.boldSystemFontOfSize(15.0)
+            self.backgroundColor = UIColor.grayColor()
+        } else {
+            hashtagNameLabel?.font = UIFont.systemFontOfSize(15.0)
+            self.backgroundColor = nil
+        }
     }
-
 }

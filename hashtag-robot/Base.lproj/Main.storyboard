@@ -58,7 +58,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interactions are highest with 11+ hashtags" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlc-kz-x1z">
-                                        <rect key="frame" x="51" y="27" width="219" height="14"/>
+                                        <rect key="frame" x="51" y="28" width="219" height="14"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -74,10 +74,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pq8-83-FJn">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="504" width="320" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="i9d-gs-M72"/>
+                                    <constraint firstAttribute="height" constant="64" id="i9d-gs-M72"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Show Me More Hashtags!">
@@ -91,7 +91,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Start your day with a healthy breakfast of kale and oatmeal here at @fuelcafe" translatesAutoresizingMaskIntoConstraints="NO" id="joR-MA-3Pq">
                                         <rect key="frame" x="93" y="0.0" width="219" height="90"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="twitter"/>
                                     </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="DB6-6u-MqH">
@@ -114,7 +114,7 @@
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZA-EO-tyq">
-                                <rect key="frame" x="0.0" y="239" width="320" height="286"/>
+                                <rect key="frame" x="0.0" y="239" width="320" height="265"/>
                                 <connections>
                                     <segue destination="YZ7-BG-NhB" kind="embed" identifier="SuggestedHashtagsSegue" id="mfv-fo-f6j"/>
                                 </connections>
@@ -122,7 +122,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="bEr-Xy-E5g" firstAttribute="top" secondItem="sZA-EO-tyq" secondAttribute="bottom" constant="43" id="8DN-iB-uAe"/>
+                            <constraint firstItem="bEr-Xy-E5g" firstAttribute="top" secondItem="sZA-EO-tyq" secondAttribute="bottom" constant="64" id="8DN-iB-uAe"/>
                             <constraint firstItem="Pq8-83-FJn" firstAttribute="leading" secondItem="33Q-G1-idN" secondAttribute="leading" id="90X-bd-IQn"/>
                             <constraint firstAttribute="trailing" secondItem="sZA-EO-tyq" secondAttribute="trailing" id="BG9-J4-MAI"/>
                             <constraint firstAttribute="trailing" secondItem="Y0U-tb-S50" secondAttribute="trailing" id="Ihk-Kt-6JS"/>
@@ -137,7 +137,7 @@
                             <constraint firstItem="sZA-EO-tyq" firstAttribute="leading" secondItem="33Q-G1-idN" secondAttribute="leading" id="u3c-Sn-6nL"/>
                             <constraint firstItem="Y0U-tb-S50" firstAttribute="leading" secondItem="33Q-G1-idN" secondAttribute="leading" id="ubn-d9-pZs"/>
                             <constraint firstItem="uJ6-aL-JDp" firstAttribute="top" secondItem="yzs-wa-j9B" secondAttribute="bottom" constant="10" id="veG-YR-9Lj"/>
-                            <constraint firstItem="SDI-rx-Xzj" firstAttribute="centerY" secondItem="uJ6-aL-JDp" secondAttribute="centerY" constant="-0.5" id="x9z-n4-dtU"/>
+                            <constraint firstItem="SDI-rx-Xzj" firstAttribute="centerY" secondItem="uJ6-aL-JDp" secondAttribute="centerY" id="x9z-n4-dtU"/>
                             <constraint firstAttribute="trailing" secondItem="SDI-rx-Xzj" secondAttribute="trailing" constant="8" id="xiY-kf-P7M"/>
                         </constraints>
                     </view>
@@ -146,6 +146,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="captionTextView" destination="joR-MA-3Pq" id="xqn-VW-xTH"/>
+                        <outlet property="insertAllButton" destination="SDI-rx-Xzj" id="vC5-oA-Qza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRt-lv-Q6t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,8 +157,8 @@
         <scene sceneID="0jP-lb-D5V">
             <objects>
                 <tableViewController id="YZ7-BG-NhB" customClass="SuggestedHashtagsTableViewController" customModule="hashtag_robot" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="39h-MK-coO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="286"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="39h-MK-coO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="265"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -168,22 +169,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.6600000262260437" translatesAutoresizingMaskIntoConstraints="NO" id="idy-Es-u69">
-                                            <rect key="frame" x="222" y="17" width="90" height="10"/>
+                                            <rect key="frame" x="202" y="12" width="110" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="90" id="LNE-6G-Xb2"/>
-                                                <constraint firstAttribute="height" constant="10" id="tSy-TO-Pdr"/>
+                                                <constraint firstAttribute="width" constant="110" id="LNE-6G-Xb2"/>
+                                                <constraint firstAttribute="height" constant="20" id="tSy-TO-Pdr"/>
                                             </constraints>
                                             <color key="progressTintColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </progressView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#breakfast" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jih-Df-d72">
-                                            <rect key="frame" x="8" y="14" width="59" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <rect key="frame" x="15" y="14" width="68" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="Jih-Df-d72" firstAttribute="leading" secondItem="RaM-mW-cdj" secondAttribute="leading" constant="8" id="HhP-1D-gaz"/>
+                                        <constraint firstItem="Jih-Df-d72" firstAttribute="leading" secondItem="RaM-mW-cdj" secondAttribute="leading" constant="15" id="HhP-1D-gaz"/>
                                         <constraint firstAttribute="centerY" secondItem="idy-Es-u69" secondAttribute="centerY" id="WFu-rW-dZI"/>
                                         <constraint firstAttribute="centerY" secondItem="Jih-Df-d72" secondAttribute="centerY" id="Yr2-xo-LZj"/>
                                         <constraint firstAttribute="trailing" secondItem="idy-Es-u69" secondAttribute="trailing" constant="8" id="ipy-io-d6N"/>

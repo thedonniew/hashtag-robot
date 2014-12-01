@@ -11,6 +11,7 @@ import UIKit
 protocol SuggestedHashtagsTableViewControllerDelegate {
     
     func suggestedHashtagsTableViewController(controller:SuggestedHashtagsTableViewController, didSelectHashtag hashtag:String)
+    func suggestedHashtagsTableViewController(controller:SuggestedHashtagsTableViewController, didDeselectHashtag hashtag:String)
 }
 
 class SuggestedHashtagsTableViewController: UITableViewController {
@@ -60,7 +61,16 @@ class SuggestedHashtagsTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let hashtag = suggestedHashtags[indexPath.row]
+        delegate?.suggestedHashtagsTableViewController(self, didDeselectHashtag: hashtag)
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        
+        
         let hashtag = suggestedHashtags[indexPath.row]
         delegate?.suggestedHashtagsTableViewController(self, didSelectHashtag: hashtag)
     }
