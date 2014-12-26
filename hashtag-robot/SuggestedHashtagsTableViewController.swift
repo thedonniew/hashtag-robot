@@ -16,8 +16,6 @@ protocol SuggestedHashtagsTableViewControllerDelegate {
 
 class SuggestedHashtagsTableViewController: UITableViewController {
     
-
-    
     let suggestedHashtags = ["#breakfast", "#healthy", "#kale", "#oatmeal"]
     var delegate: SuggestedHashtagsTableViewControllerDelegate?
 
@@ -68,8 +66,6 @@ class SuggestedHashtagsTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        
-        
         
         let hashtag = suggestedHashtags[indexPath.row]
         delegate?.suggestedHashtagsTableViewController(self, didSelectHashtag: hashtag)

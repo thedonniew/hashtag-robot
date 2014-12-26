@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		61FA09E11A11D5E00038C602 /* HashtagRecommender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FA09E01A11D5E00038C602 /* HashtagRecommender.swift */; };
+		F8110D811A4DEB480013BB02 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8110D801A4DEB480013BB02 /* CameraViewController.swift */; };
 		F8BBA93B1A11BD970001D2E5 /* SuggestedHashtagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BBA93A1A11BD970001D2E5 /* SuggestedHashtagsTableViewController.swift */; };
 		F8C0EC6E1A11761B0028DF65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0EC6D1A11761B0028DF65 /* AppDelegate.swift */; };
 		F8C0EC701A11761B0028DF65 /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C0EC6F1A11761B0028DF65 /* CaptionViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		61FA09E01A11D5E00038C602 /* HashtagRecommender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashtagRecommender.swift; sourceTree = "<group>"; };
+		F8110D801A4DEB480013BB02 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		F8BBA93A1A11BD970001D2E5 /* SuggestedHashtagsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedHashtagsTableViewController.swift; sourceTree = "<group>"; };
 		F8C0EC681A11761B0028DF65 /* hashtag-robot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hashtag-robot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C0EC6C1A11761B0028DF65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				F8C0EC6D1A11761B0028DF65 /* AppDelegate.swift */,
 				F8C0EC6F1A11761B0028DF65 /* CaptionViewController.swift */,
 				F8C0EC711A11761B0028DF65 /* Main.storyboard */,
+				F8110D801A4DEB480013BB02 /* CameraViewController.swift */,
 				F8BBA93A1A11BD970001D2E5 /* SuggestedHashtagsTableViewController.swift */,
 				F8C383431A267BC4000EA3EF /* HashtagCell.swift */,
 				F8C0EC741A11761B0028DF65 /* Images.xcassets */,
@@ -240,6 +243,7 @@
 				F8C0EC701A11761B0028DF65 /* CaptionViewController.swift in Sources */,
 				F8C0EC6E1A11761B0028DF65 /* AppDelegate.swift in Sources */,
 				F8BBA93B1A11BD970001D2E5 /* SuggestedHashtagsTableViewController.swift in Sources */,
+				F8110D811A4DEB480013BB02 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
