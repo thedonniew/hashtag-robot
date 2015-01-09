@@ -52,24 +52,35 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO TIP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8v-Zm-HE7">
-                                        <rect key="frame" x="136" y="8" width="49" height="15"/>
+                                        <rect key="frame" x="145" y="8" width="49" height="15"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interactions are highest with 11+ hashtags" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nlc-kz-x1z">
-                                        <rect key="frame" x="51" y="28" width="219" height="14"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <rect key="frame" x="8" y="28" width="304" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="WWZ-iv-Uh4">
+                                        <rect key="frame" x="123" y="3" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Hj7-ti-5Ry"/>
+                                            <constraint firstAttribute="width" constant="20" id="YHF-2L-hND"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="C8v-Zm-HE7" firstAttribute="top" secondItem="Y0U-tb-S50" secondAttribute="top" constant="8" id="5MC-tq-Qq5"/>
                                     <constraint firstItem="nlc-kz-x1z" firstAttribute="top" secondItem="C8v-Zm-HE7" secondAttribute="bottom" constant="5" id="L82-8T-axi"/>
-                                    <constraint firstAttribute="centerX" secondItem="C8v-Zm-HE7" secondAttribute="centerX" id="Xvm-pE-30m"/>
+                                    <constraint firstAttribute="trailing" secondItem="nlc-kz-x1z" secondAttribute="trailing" constant="8" id="Owy-zL-9vi"/>
+                                    <constraint firstItem="C8v-Zm-HE7" firstAttribute="leading" secondItem="WWZ-iv-Uh4" secondAttribute="trailing" constant="2" id="QsR-1l-ReQ"/>
+                                    <constraint firstItem="nlc-kz-x1z" firstAttribute="leading" secondItem="Y0U-tb-S50" secondAttribute="leading" constant="8" id="Te1-G7-bhS"/>
+                                    <constraint firstItem="C8v-Zm-HE7" firstAttribute="centerX" secondItem="nlc-kz-x1z" secondAttribute="centerX" constant="9" id="cT4-9Q-nP9"/>
                                     <constraint firstAttribute="centerX" secondItem="nlc-kz-x1z" secondAttribute="centerX" id="cVR-4Q-EVI"/>
+                                    <constraint firstItem="WWZ-iv-Uh4" firstAttribute="centerY" secondItem="C8v-Zm-HE7" secondAttribute="centerY" constant="-2.5" id="oVg-Sk-Dmj"/>
                                     <constraint firstAttribute="height" constant="50" id="zQM-h9-YeL"/>
                                 </constraints>
                             </view>
@@ -88,29 +99,29 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yzs-wa-j9B">
                                 <rect key="frame" x="0.0" y="114" width="320" height="90"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Start your day with a healthy breakfast of kale and oatmeal here at @fuelcafe" translatesAutoresizingMaskIntoConstraints="NO" id="joR-MA-3Pq">
-                                        <rect key="frame" x="93" y="0.0" width="219" height="90"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="twitter"/>
-                                    </textView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample" translatesAutoresizingMaskIntoConstraints="NO" id="DB6-6u-MqH">
                                         <rect key="frame" x="8" y="5" width="80" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="DB6-6u-MqH" secondAttribute="height" multiplier="1:1" id="2mh-5H-m2h"/>
                                         </constraints>
                                     </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="dzG-Zo-LuR" customClass="CaptionTextView" customModule="hashtag_robot" customModuleProvider="target">
+                                        <rect key="frame" x="96" y="5" width="216" height="80"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="twitter" returnKeyType="done"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="DB6-6u-MqH" secondAttribute="bottom" constant="5" id="0jc-kC-R1x"/>
-                                    <constraint firstAttribute="trailing" secondItem="joR-MA-3Pq" secondAttribute="trailing" constant="8" id="9g9-1z-ZxP"/>
+                                    <constraint firstItem="dzG-Zo-LuR" firstAttribute="top" secondItem="yzs-wa-j9B" secondAttribute="top" constant="5" id="4Nq-7z-avm"/>
+                                    <constraint firstAttribute="trailing" secondItem="dzG-Zo-LuR" secondAttribute="trailing" constant="8" id="LSq-st-M18"/>
                                     <constraint firstItem="DB6-6u-MqH" firstAttribute="leading" secondItem="yzs-wa-j9B" secondAttribute="leading" constant="8" id="Sf6-hx-XZC"/>
+                                    <constraint firstAttribute="bottom" secondItem="dzG-Zo-LuR" secondAttribute="bottom" constant="5" id="X1n-WH-RqL"/>
                                     <constraint firstAttribute="height" constant="90" id="dYk-cs-0JQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="joR-MA-3Pq" secondAttribute="bottom" id="gHq-Ff-r8x"/>
                                     <constraint firstItem="DB6-6u-MqH" firstAttribute="top" secondItem="yzs-wa-j9B" secondAttribute="top" constant="5" id="gSd-Hh-dea"/>
-                                    <constraint firstItem="joR-MA-3Pq" firstAttribute="top" secondItem="yzs-wa-j9B" secondAttribute="top" id="lM1-e5-y0P"/>
-                                    <constraint firstItem="joR-MA-3Pq" firstAttribute="leading" secondItem="DB6-6u-MqH" secondAttribute="trailing" constant="5" id="wb2-Tr-ToF"/>
+                                    <constraint firstItem="dzG-Zo-LuR" firstAttribute="leading" secondItem="DB6-6u-MqH" secondAttribute="trailing" constant="8" id="uv7-mH-zdM"/>
                                 </constraints>
                             </view>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZA-EO-tyq">
@@ -142,10 +153,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mmQ-aa-fC7">
+                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="eN9-em-AUz">
+                            <connections>
+                                <action selector="retakePhoto:" destination="NN2-zh-Hh7" id="jrU-wE-9zp"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="OK" id="v4p-C4-8JZ"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="captionTextView" destination="joR-MA-3Pq" id="xqn-VW-xTH"/>
+                        <outlet property="captionTextView" destination="dzG-Zo-LuR" id="p2J-pd-4jm"/>
                         <outlet property="imageView" destination="DB6-6u-MqH" id="Xuw-m0-EM0"/>
                         <outlet property="insertAllButton" destination="SDI-rx-Xzj" id="vC5-oA-Qza"/>
                     </connections>
@@ -208,6 +224,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark" width="150" height="150"/>
         <image name="sample" width="429" height="429"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

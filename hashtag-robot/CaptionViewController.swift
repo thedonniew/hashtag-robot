@@ -9,11 +9,11 @@
 import UIKit
 import MobileCoreServices
 
-class CaptionViewController: UIViewController, SuggestedHashtagsTableViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class CaptionViewController: UIViewController, SuggestedHashtagsTableViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate {
     
     @IBOutlet weak var insertAllButton: UIButton!
-    @IBOutlet var captionTextView : UITextView?
     @IBOutlet var imageView : UIImageView?
+    @IBOutlet weak var captionTextView: UITextView!
     
     var hashtagsController: SuggestedHashtagsTableViewController?
 
@@ -21,16 +21,22 @@ class CaptionViewController: UIViewController, SuggestedHashtagsTableViewControl
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
         //  present image picker controller
         if UIImagePickerController.isSourceTypeAvailable(.Camera) {
             let cameraUI = UIImagePickerController()
             cameraUI.sourceType = .Camera
-            cameraUI.mediaTypes = UIImagePickerController.availableMediaTypesForSourceType(.Camera)!
-            cameraUI.allowsEditing = false
+            cameraUI.mediaTypes = [kUTTypeImage]
+            cameraUI.allowsEditing = true
             cameraUI.delegate = self
             self.presentViewController(cameraUI, animated: true, completion: nil)
         }
+        
+        captionTextView.text = "Placeholder"
+        captionTextView.textColor = UIColor.lightGrayColor()
+        
+        captionTextView.becomeFirstResponder()
+        
+        captionTextView.selectedTextRange = captionTextView.textRangeFromPosition(captionTextView.beginningOfDocument, toPosition: captionTextView.beginningOfDocument)
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,7 +59,6 @@ class CaptionViewController: UIViewController, SuggestedHashtagsTableViewControl
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
         
         let mediaType = info[UIImagePickerControllerMediaType] as String
-        
         
         if mediaType == kUTTypeImage {
             let image = info[UIImagePickerControllerOriginalImage] as UIImage
@@ -108,7 +113,6 @@ class CaptionViewController: UIViewController, SuggestedHashtagsTableViewControl
             hashtagString = hashtagString.substringFromIndex(1)
             captionTextView?.text = caption?.stringByReplacingOccurrencesOfString(hashtagString, withString: hashtag)
         }
-
     }
     
     func checkInsertAll() {
@@ -138,6 +142,47 @@ class CaptionViewController: UIViewController, SuggestedHashtagsTableViewControl
         removeHashTag(hashtag)
         checkInsertAll()
     }
+    
+    // MARK: - Placeholder text
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        // Combine the textView text and the replacement text to
+        // create the updated text string
+        let currentText:NSString = captionTextView.text
+        let updatedText = currentText.stringByReplacingCharactersInRange(range, withString: text)
+        
+        // If updated text view will be empty, add the placeholder
+        // and set the cursor to the beginning of the text view
+        if countElements(updatedText) == 0 {
+            
+            captionTextView.text = "Placeholder"
+            captionTextView.textColor = UIColor.lightGrayColor()
+            
+            captionTextView.selectedTextRange = captionTextView.textRangeFromPosition(captionTextView.beginningOfDocument, toPosition: captionTextView.beginningOfDocument)
+            
+            return false
+        }
+        
+        // Else if the text view's placeholder is showing and the
+        // length of the replacement string is greater than 0, clear
+        // the text view and set its color to black to prepare for
+        // the user's entry
+        else if captionTextView.textColor == UIColor.lightGrayColor() && countElements(text) > 0 {
+            captionTextView.text = nil
+            captionTextView.textColor = UIColor.blackColor()
+        }
+        
+        return true
+    }
+    
+    func textViewDidChangeSelection(textView: UITextView) {
+        if self.view.window != nil {
+            if captionTextView.textColor == UIColor.lightGrayColor() {
+                captionTextView.selectedTextRange = captionTextView.textRangeFromPosition(captionTextView.beginningOfDocument, toPosition: captionTextView.beginningOfDocument)
+            }
+        }
+    }
+
     
     // MARK: - IB Actions
     
@@ -172,5 +217,11 @@ class CaptionViewController: UIViewController, SuggestedHashtagsTableViewControl
         
         checkInsertAll()
     }
+    
+    // TODO: if 'Cancel' button is pressed, open Camera again
+    @IBAction func retakePhoto(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }
 
